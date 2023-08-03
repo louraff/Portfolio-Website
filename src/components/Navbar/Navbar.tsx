@@ -29,11 +29,9 @@ const NavBar: React.FC = () => {
 
   return (
     <nav>
-      <a href="#hero" className={activeSection === 'hero' ? 'active' : ''}>Home</a>
       <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a>
       <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
       <a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experience</a>
-      <a href="#interests" className={activeSection === 'interests' ? 'active' : ''}>Interests</a>
       <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
     </nav>
   );

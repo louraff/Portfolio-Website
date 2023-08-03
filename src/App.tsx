@@ -17,36 +17,31 @@ import Projects from './components/Projects/Projects';
 import Hero from './components/Hero/Hero';
 
 const App: React.FC = () => {
-
-  return (
-    <main className="App">
-          <NavBar/>
+    return (
+      <main className="App">
+        <div className="left-section">
+          <div id="hero">
+            <Hero />
+            <NavBar />
+          </div>
+        </div>
+        <div className="right-section">
+          <div id="about">
+            <About />
+          </div>
+          <div id="projects">
+            <Projects />
+          </div>
+          <div id="experience">
+            <Experience />
+          </div>
+          <div id="contact">
+            <Contact />
+          </div>
+        </div>
+      </main>
+    );
+  };
   
-     <div id="hero">
-        <Hero />
-     </div>
-
-     <div id="about">
-       <About />
-     </div>
-
-     <div id="projects">
-      <Projects />
-     </div>
-
-     <div id="experience">
-      <Experience />
-     </div>
-
-     <div id="interests">
-      <Interests />
-     </div>
-
-     <div id="contact">
-      <Contact />
-     </div>
-    </main>
-  );
-}
-
-export default App;
+  export default App;
+  
