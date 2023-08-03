@@ -1,0 +1,28 @@
+p {
+    text-align: left;
+}
+
+card {
+    margin-left: 5%;
+}
+
+@media (min-width: 768px) {
+.md\:max-w-xl {
+    max-width: 56rem;
+}
+}
+
+img.h-96.w-full.rounded-t-lg.object-cover  {
+    height: 30%;
+    width: 45%;
+    margin: auto;
+}
+
+card.av {
+    margin: auto;
+}
+
+img.card.op {
+    margin: auto;
+    width: 50vmin;
+}

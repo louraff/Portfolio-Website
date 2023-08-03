@@ -14,6 +14,7 @@ import Contact from './components/Contact/Contact';
 import Experience from './components/Experience/Experience';
 import Interests from './components/Interests/Interests';
 import Projects from './components/Projects/Projects';
+import Hero from './components/Hero/Hero';
 
 const App: React.FC = () => {
 
@@ -21,6 +22,10 @@ const App: React.FC = () => {
     <main className="App">
           <NavBar/>
   
+     <div id="hero">
+        <Hero />
+     </div>
+
      <div id="about">
        <About />
      </div>
