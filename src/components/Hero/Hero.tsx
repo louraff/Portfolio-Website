@@ -1,8 +1,12 @@
 import React from 'react'
+import '../css/Hero.css'
 
 const Hero: React.FC = () => {
     return (
-        <h1>Louise Raffray</h1>
+        <div className="hero">
+            <h1 className='name'>Louise Raffray</h1>
+            <p className='job'>Junior Full Stack Software Engineer</p>
+        </div>
     )
 }
 
