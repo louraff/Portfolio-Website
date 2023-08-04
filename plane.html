@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Plane Animation</title>
+  </head>
+  <body>
+    <svg width="500" height="300">
+      <svg width="500" height="300">
+        <rect x="0" y="100" width="100" height="30" fill="blue">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="3s"
+            from="0"
+            to="400"
+            repeatCount="indefinite"
+          />
+        </rect>
+        <polygon points="-10,100 100,100 50,70" fill="blue">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="3s"
+            from="0"
+            to="400"
+            repeatCount="indefinite"
+          />
+        </polygon>
+        <circle cx="25" cy="110" r="5" fill="white">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="3s"
+            from="0"
+            to="400"
+            repeatCount="indefinite"
+          />
+        </circle>
+        <circle cx="75" cy="110" r="5" fill="white">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="3s"
+            from="0"
+            to="400"
+            repeatCount="indefinite"
+          />
+        </circle>
+      </svg>
+    </svg>
+  </body>
+</html>
