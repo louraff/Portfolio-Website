@@ -1,3 +1,48 @@
+@import 'locomotive-scroll/dist/locomotive-scroll.css';
+
+html.has-scroll-smooth {
+    overflow: hidden;
+  }
+  
+  html.has-scroll-dragging {
+    user-select: none;
+  }
+  
+  .html.has-scroll-init {
+    overflow: hidden;
+  }
+  
+  body {
+    overscroll-behavior: none;
+  }
+
+  .animate-section {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Starts a little lower */
+    transition: opacity 0.5s, transform 0.5s; /* Animation properties */
+  }
+  
+  /* When Locomotive Scroll triggers the animation */
+  .has-scroll .animate-section[data-scroll] {
+    opacity: 1; /* Becomes visible */
+    transform: translateY(0); /* Moves to the original position */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 2s ease forwards; 
+  }
+
 .App {
     text-align: center;
     margin-left: 10%;
@@ -7,20 +52,47 @@
 
   .left-section {
     position: fixed;
-    width: 25%;
+    width: 30%;
     height: 100vh;
     overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 2;
   }
   
-  .right-section {
-    margin-left: 30%;
+  /* .right-section {
+    position: absolute; 
+    top: 30%; 
     width: 70%;
     overflow-y: scroll;
+    z-index: 1; 
+  } */
+
+  .right-section {
+    position: absolute;
+    top: -11.5%; /* Now it starts at the top of the main container */
+    width: 90%; /* Use 100% of the main container's width */
+    height: 100%; /* Use 100% of the main container's height */
+    overflow-y: scroll;
+    padding-bottom: 25%;
   }
   
+  
+  
+  .main-container {
+    overflow: hidden;
+    position: fixed;
+    top: -18%;
+    right: 0;
+    bottom: 0;
+    left: 25%;
+    z-index: 1;
+    width: 70%;
+  }
+  
+  
   div#about {
-    margin-top: 15%;
-
+    margin-bottom: 15%;
   }
   
   .App-logo {
