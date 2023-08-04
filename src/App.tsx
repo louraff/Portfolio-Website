@@ -2,9 +2,11 @@
 import './App.css';
 
 // React Components
+import LocomotiveScroll from 'locomotive-scroll';
+ 
 
 // Router
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 
 
 // Custom Components
@@ -17,6 +19,22 @@ import Projects from './components/Projects/Projects';
 import Hero from './components/Hero/Hero';
 
 const App: React.FC = () => {
+    const containerRef = useRef(null);
+
+
+    useEffect(() => {
+        if (containerRef.current) {
+          const scroll = new LocomotiveScroll({
+            el: containerRef.current,
+            smooth: true,
+          });
+      
+          return () => {
+            scroll.destroy();
+          };
+        }
+      }, []);
+      
     return (
       <main className="App">
         <div className="left-section">
