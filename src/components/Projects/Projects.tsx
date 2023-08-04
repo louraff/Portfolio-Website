@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
       <h2>Projects</h2>
 
       <div className="row">
-        <div className="col-12 project-card">
+        <div className="col-12 project-car project-from-left">
           <div className="project-image">
             <img src="/assets/project-images/AVlaptop.jpg" alt="portfolio website"/>
           </div>
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
 
         {/* Add 'reverse' class to alternate layout */}
       <div className="row">
-        <div className="col-12 project-card">
+        <div className="col-12 project-card project-from-right">
           <div className="project-image">
               <img src="/assets/project-images/8.jpg" alt="portfolio website"/>
           </div>
@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
       </div>
 
       <div className="row">
-        <div className="col-12 project-card">
+        <div className="col-12 project-card project-from-left">
           <div className="project-image">
             <img src="/assets/project-images/7.jpg" alt="portfolio website"/>
           </div>
@@ -118,7 +118,7 @@ const Projects: React.FC = () => {
       </div>
         {/* Add 'reverse' class to alternate layout */}
       <div className="row">
-        <div className="col-12 project-card">
+        <div className="col-12 project-card project-from-right">
           <div className="project-image">
             <img src="/assets/project-images/6.jpg" alt="portfolio website"/>
           </div>
