@@ -42,20 +42,26 @@ const App: React.FC = () => {
             <Hero />
             <NavBar />
           </div>
+          <div id="contact" className='social-links'>
+            <Contact />
+          </div>
         </div>
         <div className="right-section">
-          <div id="about">
+            <section data-scroll-section>
+          <div id="about"
+          data-scroll 
+          data-scroll-direction="horizontal"
+          data-scroll-speed="3">
             <About />
           </div>
+          </section>
           <div id="projects">
             <Projects />
           </div>
           <div id="experience">
             <Experience />
           </div>
-          <div id="contact">
-            <Contact />
-          </div>
+        
         </div>
       </main>
     );
