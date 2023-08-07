@@ -5,13 +5,22 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
+    width: 80%;
+    padding: 1vmin;
+    margin: auto;
 }
 
 h1.name {
     font-size: 4.5vmin;
+    margin-top: 30%;
 }
 
 p.job {
     font-size: 1.6vmin;
+}
+
+.container-section.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }

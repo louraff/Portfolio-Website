@@ -1,6 +1,7 @@
 @import 'locomotive-scroll/dist/locomotive-scroll.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -12,6 +13,11 @@
     }
   }
   
+  [data-scroll-section] {
+    height: 100vh;
+    overflow-y: hidden; /* Optional but might be helpful to prevent any internal scroll */
+}
+
   .fadeIn {
     animation: fadeIn 1.5s ease forwards; 
   }
@@ -132,7 +138,7 @@
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif;
   }
 
   .hidden-section {
@@ -182,6 +188,14 @@
       animation: App-logo-spin infinite 20s linear;
     }
   }
+
+  /* For devices smaller than 600px */
+@media (max-width: 600px) {
+  [data-scroll-section] {
+      height: 100vh; /* Or you can adjust it as necessary */
+  }
+}
+
   
   .App-header {
     background-color: #282c34;
@@ -206,3 +220,25 @@
       transform: rotate(360deg);
     }
   }
+
+  .fixed-icons {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000; /* ensures the icons are above other elements */
+}
+
+.fixed-icons a {
+    color: #000;  /* color of the icons */
+    margin-left: 0.5rem;  /* space between the icons */
+    font-size: 1.5rem;  /* size of the icons */
+    text-decoration: none; /* remove default link style */
+}
+
+.fixed-icons a:hover {
+    color: #0077b5;  /* LinkedIn blue color on hover */
+}
+
+.fixed-icons .fab.fa-github:hover {
+    color: #171515;  /* GitHub black color on hover */
+}

@@ -20,8 +20,8 @@ import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
 
 const App: React.FC = () => {
-    const containerRef = useRef(null);
-    const [bannerOpen, setBannerOpen] = useState(false); 
+  const containerRef = useRef<HTMLElement | null>(null);
+  const [bannerOpen, setBannerOpen] = useState(false); 
  
     // Function to toggle the banner
   const toggleBanner = () => {
@@ -33,6 +33,10 @@ const App: React.FC = () => {
           const scroll = new LocomotiveScroll({
             el: containerRef.current,
             smooth: true,
+            getDirection: true,
+            getSpeed: true,
+            lerp: 0.05,
+            class: 'is-inview',
           });
       
           return () => {
@@ -40,9 +44,9 @@ const App: React.FC = () => {
           };
         }
       }, []);
-      
+
     return (
-      <main className="App">
+      <div className="App">
         {/* <div className="left-section">
           <div id="hero">
             <Hero />
@@ -54,6 +58,15 @@ const App: React.FC = () => {
         </div> */}
         <div className="right-section">
             <section data-scroll-section>
+          <div id="hero"
+          data-scroll 
+          data-scroll-direction="horizontal"
+          data-scroll-speed="3">
+            <Hero />
+          </div>
+          </section>
+        <div className="right-section">
+            <section data-scroll-section>
           <div id="about"
           data-scroll 
           data-scroll-direction="horizontal"
@@ -61,44 +74,38 @@ const App: React.FC = () => {
             <About />
           </div>
           </section>
-          <div id="skills">
+          <section data-scroll-section>
+          <div id="skills" data-scroll 
+          data-scroll-direction="horizontal"
+          data-scroll-speed="3">
             <Skills />
           </div>
-          <div id="projects">
+          </section>
+          </div>
+          <section data-scroll-section >
+          <div id="projects" data-scroll 
+          data-scroll-direction="horizontal"
+          data-scroll-speed="3">
             <Projects />
           </div>
-          <div id="experience">
+          </section>
+          <div className='App'>
+          <section data-scroll-section>
+          <div id="experience" data-scroll 
+          data-scroll-direction="horizontal"
+          data-scroll-speed="3">
             <Experience />
           </div>
-        
+          </section>
         </div>
-       
-        <div className={`skills-arrow ${bannerOpen ? 'open' : ''}`} onClick={toggleBanner}>
-        <div className={`arrow ${bannerOpen ? 'up' : 'down'}`} />
-      </div>
-        <div className={`skills-banner ${bannerOpen ? 'open' : ''}`}>
-        <div className="skills-list">
-        <img src="https://devicon-website.vercel.app/api/javascript/plain.svg" alt="JavaScript" className="icon"/>
-        <img src="https://devicon-website.vercel.app/api/html5/plain.svg" alt="HTML5" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/python/original.svg" alt="python" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/css3/plain.svg" alt="css" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/postgresql/plain.svg" alt="postgresql" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/sqlite/original.svg" alt="sqlite" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/react/original.svg" alt="react" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/nodejs/plain.svg" alt="node" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/express/original.svg" alt="express" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/django/plain.svg" alt="express" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/d3js/original.svg" alt="d3" className="icon"></img>
-        <img src="https://devicon-website.vercel.app/api/mongodb/original.svg" alt="d3" className="icon"></img>
-
-
         </div>
-        
-        {/* Add your icons here, e.g., <i className="fab fa-js"></i> */}
-        
+        <div className="fixed-icons">
+    <a href="https://www.linkedin.com/in/louiseraffray/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+    <a href="https://github.com/louraff" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+    <a>raffraylouise@gmail.com</a>
+</div>
+
       </div>
-   
-      </main>
     );
   };
   
