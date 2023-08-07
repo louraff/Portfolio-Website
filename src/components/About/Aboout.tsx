@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <div className="container-section">
          <div className="animate-section fadeIn">
         <p className="about">
-            My fascination with programming is echoed in an analogy from a lecture by Professor Zammit of Malta University. While languages are like lakes - finite and fully graspable – coding is an ocean, boundless in its depth and breadth of learning and exploration.
+            <span className="book">My fascination with programming</span> is echoed in an analogy from a lecture by Professor Zammit of Malta University. While languages are like lakes - finite and fully graspable – coding is an ocean, boundless in its depth and breadth of learning and exploration.
 <br />
 <br />
             One day, while deep-diving into JavaScript and HTML I came to a realisation: coding is not just a skill but a craft, a means to channel my creativity and problem-solving skills into tangible solutions that could make a real difference. Now, as a newly minted Software Engineer from General Assembly, my entry into the tech industry is fueled by curiosity, adaptability, and an unyielding drive for knowledge and growth. 
