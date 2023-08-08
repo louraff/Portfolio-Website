@@ -31,6 +31,11 @@
   justify-content: center;
 }
 
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
 
 .carousel-control-next-icon {
   display: inline-block;
@@ -41,7 +46,7 @@
   margin-left: 13vmin;
 }
 span.carousel-control-prev-icon {
-  margin-left: -14vmin !important;
+  margin-left: -8vmin !important;
 }
 
 a.proj {
@@ -65,6 +70,7 @@ a.asset {
 
 a.adoptly {
   color: #FFEDA6 !important;
+  font-size: 2rem !important;
 }
 
 .fa-external-link-alt.adoptly {
@@ -74,6 +80,7 @@ a.adoptly {
 
 a.projex {
   color: #91b4d8 !important;
+  font-size: 2rem !important;
 }
 
 .fa-external-link-alt.projex {
@@ -82,6 +89,8 @@ a.projex {
 
 a.snake {
   color: #9592ee !important;
+  font-size: 2rem !important;
+
 }
 
 .fa-external-link-alt.snake {
@@ -90,32 +99,32 @@ a.snake {
 
 .asset.carousel-caption {
   position: absolute;
-    left: 38.5%;
-    color: #fff;
-    text-align: center;
-    bottom: 10%;
+  left: 41%;
+  color: #fff;
+  text-align: center;
+  bottom: 8%;
 }
 
 .adoptly.carousel-caption {
   position: absolute;
-  left: 36.5%;
+  left: 40.5%;
   color: #fff;
   text-align: center;
-  bottom: 10%;
+  bottom: 9%;
 }
 .projex.carousel-caption {
-    position: absolute;
-    left: 37%;
-    color: #fff;
-    text-align: center;
-    bottom: 17%;
+  position: absolute;
+  left: 40.5%;
+  color: #fff;
+  text-align: center;
+  bottom: 15%;
 }
 .snake.carousel-caption {
   position: absolute;
-  left: 37%;
+  left: 40.5%;
   color: #fff;
   text-align: center;
-  bottom: 18.5%;
+  bottom: 16.5%;
 }
   /* .project-card {
     display: flex;

@@ -139,6 +139,7 @@
     margin-left: 15%;
     margin-right: 15%;
     font-family: 'DM Sans', sans-serif;
+    color: #282D33;
   }
 
   .hidden-section {
@@ -163,9 +164,9 @@
   }
 
   a {
-    color: #000 !important; /* Set the color */
-    margin-right: 1rem; /* Add space between the links */
-    font-size: 1.5rem; /* Adjust the size */
+    color: #9ABE4F !important;
+    margin-right: 1rem; 
+    font-size: 1.5rem; 
   }
   
   .right-section {
@@ -241,4 +242,10 @@
 
 .fixed-icons .fab.fa-github:hover {
     color: #171515;  /* GitHub black color on hover */
+}
+
+a.email {
+  color: #282D33 !important;
+    font-weight: 400;
+    font-size: 1rem;
 }

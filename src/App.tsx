@@ -50,12 +50,13 @@ const App: React.FC = () => {
         {/* <div className="left-section">
           <div id="hero">
             <Hero />
-            <NavBar />
+            
           </div>
           <div id="contact" className='social-links'>
             <Contact />
           </div>
         </div> */}
+        <NavBar />
         <div className="right-section">
             <section data-scroll-section>
           <div id="hero"
@@ -97,7 +98,7 @@ const App: React.FC = () => {
             <Experience />
           </div>
           </section>
-          <section data-scroll-section>
+          <section data-scroll-section className='int'>
           <div id="interests" data-scroll 
           data-scroll-direction="horizontal"
           data-scroll-speed="3">
@@ -107,9 +108,9 @@ const App: React.FC = () => {
         </div>
         </div>
         <div className="fixed-icons">
-    <a href="https://www.linkedin.com/in/louiseraffray/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
-    <a href="https://github.com/louraff" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
-    <a>raffraylouise@gmail.com</a>
+    <a href="https://www.linkedin.com/in/louiseraffray/" target="_blank" rel="noreferrer" className='icons'><i className="fab fa-linkedin"></i></a>
+    <a href="https://github.com/louraff" target="_blank" rel="noreferrer" className='icons'><i className="fab fa-github"></i></a>
+    <a className='email'>raffraylouise@gmail.com</a>
 </div>
 
       </div>

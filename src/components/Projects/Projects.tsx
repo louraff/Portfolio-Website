@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
 
 
   return (
-    <>
+    <div className="carousel-container">
     
 <Carousel interval={null}>
       <Carousel.Item>
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
     </Carousel>
 
 
-    </> 
+    </div> 
   );
 };
 

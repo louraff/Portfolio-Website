@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
+    width: 75%;
     padding: 1vmin;
     margin: auto;
     margin-left: 15%;
@@ -15,6 +15,11 @@ h1.name {
     font-size: 4.5vmin;
     margin-top: 30%;
    
+}
+
+.me {
+    margin-left: 25%;
+    margin-top: -25%;
 }
 
 p.job {
@@ -40,8 +45,8 @@ a {
 
 }
 
-p {
-    margin-left: 5%;
-    margin-right: 5%;
+p.abt {
+    margin-top: 0;
+    margin-bottom: 1rem;
     margin-right: 25%;
 }
