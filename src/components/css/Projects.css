@@ -22,6 +22,15 @@
     margin-bottom: 10px; /* Optional spacing */
   }
 
+.carousel-caption {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .carousel-control-next-icon {
   display: inline-block;
@@ -32,52 +41,81 @@
   margin-left: 13vmin;
 }
 span.carousel-control-prev-icon {
-  margin-left: -9vmin !important;
+  margin-left: -14vmin !important;
+}
+
+a.proj {
+  font-size: 2rem !important;
+  margin-left: 2vmin;
+  cursor: pointer;
+}
+.fa-external-link-alt {
+  font-size: 1.7rem !important;
+  cursor: pointer;
 }
 
 a.asset {
-  color: #944bc2 !important;
+  color: #e6f1d0 !important;
+  margin-left: -0.1vmin;
+}
+
+.fa-external-link-alt.asset {
+  color: #e6f1d0 !important;
 }
 
 a.adoptly {
   color: #FFEDA6 !important;
 }
 
-a.projex {
-  color: #F87767 !important;
+.fa-external-link-alt.adoptly {
+
+  color: #FFEDA6 !important;
 }
+
+a.projex {
+  color: #91b4d8 !important;
+}
+
+.fa-external-link-alt.projex {
+  color: #91b4d8 !important;
+}
+
 a.snake {
-  color: #BBFEDD !important;
+  color: #9592ee !important;
+}
+
+.fa-external-link-alt.snake {
+  color: #9592ee !important;
 }
 
 .asset.carousel-caption {
   position: absolute;
-  left: 35%;
-  color: #fff;
-  text-align: center;
-  bottom: 12%;
+    left: 38.5%;
+    color: #fff;
+    text-align: center;
+    bottom: 10%;
 }
 
 .adoptly.carousel-caption {
-    position: absolute;
-    left: 35%;
-    color: #fff;
-    text-align: center;
-    bottom: 12%;
-}
-.projex.carousel-caption {
   position: absolute;
-  left: 35%;
+  left: 36.5%;
   color: #fff;
   text-align: center;
-  bottom: 18%;
+  bottom: 10%;
+}
+.projex.carousel-caption {
+    position: absolute;
+    left: 37%;
+    color: #fff;
+    text-align: center;
+    bottom: 17%;
 }
 .snake.carousel-caption {
   position: absolute;
-    left: 35%;
-    color: #fff;
-    text-align: center;
-    bottom: 20%;
+  left: 37%;
+  color: #fff;
+  text-align: center;
+  bottom: 18.5%;
 }
   /* .project-card {
     display: flex;

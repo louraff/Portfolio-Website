@@ -34,7 +34,7 @@ ol {
 
 .jobs {
 
-  width: 70%;
+  width: 100%;
 }
 
 .company-time {
@@ -51,22 +51,36 @@ ol {
 }
 
 .company {
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-weight: 400;
+  font-size: .75rem;
 }
 
 .time {
+  font-size: .75rem;
   font-weight: 300;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
 }
 
 .position {
+  font-size: .75rem;
   font-weight: 300;
   text-align: start;
-}
+  align-self: flex-start;}
 
-.a {
+a.ex {
   transition: all .2s ease-in-out;
-    text-decoration: none;
+    text-decoration: none !important;
     font-weight: 700;
     color: inherit;
     cursor: pointer;
+    font-size: .75rem;
+
 }

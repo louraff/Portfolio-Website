@@ -97,6 +97,13 @@ const App: React.FC = () => {
             <Experience />
           </div>
           </section>
+          <section data-scroll-section>
+          <div id="interests" data-scroll 
+          data-scroll-direction="horizontal"
+          data-scroll-speed="3">
+            <Interests />
+          </div>
+          </section>
         </div>
         </div>
         <div className="fixed-icons">

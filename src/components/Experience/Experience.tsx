@@ -20,9 +20,9 @@ const Experience: React.FC = () => {
         <div className='time-place'>
         <div className='company-time'>
             <div className='company'>
-                <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>
+                <a href="https://generalassemb.ly/" target="_blank" className='ex'>General Assembly</a>
             </div>   
-            <div className='time'>April 2023 - July 2023</div>
+            <div className='time'>Apr 2023 - Jul 2023</div>
             </div>
             <div className='position'>Student</div>
         </div>
@@ -31,9 +31,9 @@ const Experience: React.FC = () => {
         <div className='time-place'>
         <div className='company-time'>
             <div className='company'>
-                <a href="https://www.bosh.tv/" target="_blank">BOSH!</a>
+                <a href="https://www.bosh.tv/" target="_blank" className='ex'>BOSH!</a>
             </div>   
-            <div className='time'>October 2023 - December 2023</div>
+            <div className='time'>Oct 2023 - Dec 2023</div>
             </div>
             <div className='position'>Social Media Executive</div>
         </div>
@@ -42,9 +42,9 @@ const Experience: React.FC = () => {
         <div className='time-place'>
         <div className='company-time'>
             <div className='company'>
-                <a href="https://bridebook.com/uk" target="_blank">Bridebook</a>
+                <a href="https://bridebook.com/uk" target="_blank" className='ex'>Bridebook</a>
             </div>   
-            <div className='time'>January 2020 - September 2022</div>
+            <div className='time'>Jan 2020 - Sep 2022</div>
             </div>
             <div className='position'>Freelance Social Media Manager</div>
         </div>
@@ -53,9 +53,9 @@ const Experience: React.FC = () => {
         <div className='time-place'>
         <div className='company-time'>
             <div className='company'>
-                <a href="https://bridebook.com/uk" target="_blank">Bridebook</a>
+                <a href="https://bridebook.com/uk" target="_blank" className='ex'>Bridebook</a>
             </div>   
-            <div className='time'>September 2019 - September 2022</div>
+            <div className='time'>Sep 2019 - Sep 2022</div>
             </div>
             <div className='position'>Freelance Community Manager</div>
         </div>

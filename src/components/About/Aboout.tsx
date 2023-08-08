@@ -14,12 +14,6 @@ const About: React.FC = () => {
             <br />
             Honed in the dynamic environment of tech startups and the ever-evolving world of social media, my problem-solving abilities lend a distinct perspective to my approach in software engineering. As I anticipate my next role as a developer, I look forward to diving deeper into this boundless ocean of technology, anticipating the thrill of new challenges and the reward of innovative solutions.
 
-            <br />
-            <br />
-        <span className="book">When I'm not lost in lines of code</span>I am currently immersing myself in the emotionally dense world of Charles Bukowski. My love for literature extends to penning short stories and crafting verses of my own. I've found it fuels my creativity and broadens my thinking.
-        <br />
-        <br />
-        My love for the piano keys isn't just about creating sweet harmonies - it's also my personal code for refining focus and precision.
 </p>
     </div>
     </div>

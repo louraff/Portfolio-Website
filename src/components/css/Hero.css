@@ -1,26 +1,47 @@
 .hero {
     text-align: left;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 30%;
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 80%;
+    width: 100%;
     padding: 1vmin;
     margin: auto;
+    margin-left: 15%;
+    margin-right: 15% !important;
 }
 
 h1.name {
     font-size: 4.5vmin;
     margin-top: 30%;
+   
 }
 
 p.job {
     font-size: 1.6vmin;
 }
 
-.container-section.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+    font-weight: 700;
+    color: inherit;
+}
+
+.time {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.position {
+    font-weight: 300;
+    font-size: .75rem;
+
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-right: 25%;
 }

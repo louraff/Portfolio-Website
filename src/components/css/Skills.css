@@ -3,10 +3,11 @@
     opacity: 1;
     transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;
     display: flex;
-    justify-content: center;
-    width: 80%;
     margin: 0 auto;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .skills-title {
@@ -22,17 +23,17 @@
 }
 
 .skills-container {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
-    width: 100%;
-    max-width: 650px;
-    display: flex; /* Display skills columns side by side */
+    display: flex;
     justify-content: space-between;
 }
 
 .skills-cols {
-    flex: 1; /* Distribute space evenly between columns */
-    padding: 0 15px; /* Some padding between columns */
+    flex: 1 1;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -44,4 +45,12 @@ ul {
 .skill {
     margin: 3px 0;
     font-size: .9rem;
+}
+
+.skills-cols-title {
+    font-weight: 700;
+    min-height: 4vmin;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
