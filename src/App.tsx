@@ -11,13 +11,12 @@ import React, {useRef, useEffect, useState} from 'react';
 
 // Custom Components
 import NavBar from './components/Navbar/Navbar';
-import About from './components/About/Aboout';
-import Contact from './components/Contact/Contact';
 import Experience from './components/Experience/Experience';
 import Interests from './components/Interests/Interests';
 import Projects from './components/Projects/Projects';
 import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
+import About from './components/About/About';
 
 const App: React.FC = () => {
   const containerRef = useRef<HTMLElement | null>(null);
@@ -110,7 +109,7 @@ const App: React.FC = () => {
         <div className="fixed-icons">
     <a href="https://www.linkedin.com/in/louiseraffray/" target="_blank" rel="noreferrer" className='icons'><i className="fab fa-linkedin"></i></a>
     <a href="https://github.com/louraff" target="_blank" rel="noreferrer" className='icons'><i className="fab fa-github"></i></a>
-    <a className='email'>raffraylouise@gmail.com</a>
+    <a href='mailto:raffraylouise@gmail.com'>Email me: raffraylouise@gmail.com</a>
 </div>
 <div className="attribution">
     Designed and developed by Louise Raffray using React & Typescript, 2023.
