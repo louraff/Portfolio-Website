@@ -35,7 +35,7 @@ const App: React.FC = () => {
             smooth: true,
             getDirection: true,
             getSpeed: true,
-            lerp: 0.05,
+            lerp: .8,
             class: 'is-inview',
           });
       
@@ -111,6 +111,9 @@ const App: React.FC = () => {
     <a href="https://www.linkedin.com/in/louiseraffray/" target="_blank" rel="noreferrer" className='icons'><i className="fab fa-linkedin"></i></a>
     <a href="https://github.com/louraff" target="_blank" rel="noreferrer" className='icons'><i className="fab fa-github"></i></a>
     <a className='email'>raffraylouise@gmail.com</a>
+</div>
+<div className="attribution">
+    Designed and developed by Louise Raffray using React & Typescript, 2023.
 </div>
 
       </div>

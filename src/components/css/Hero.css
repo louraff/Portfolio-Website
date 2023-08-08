@@ -17,7 +17,8 @@ h1.name {
    
 }
 
-.me {
+.me,
+.moi {
     margin-left: 25%;
     margin-top: -25%;
 }
@@ -49,4 +50,5 @@ p.abt {
     margin-top: 0;
     margin-bottom: 1rem;
     margin-right: 25%;
+    color: #737373;
 }

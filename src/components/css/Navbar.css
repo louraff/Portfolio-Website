@@ -25,11 +25,15 @@ nav {
     font-weight: 400;
     opacity: 0.5;
     transition: opacity 0.5s;
+    color: #282D33 !important;
   }
   
   nav a.active {
     font-weight: 700;
     opacity: 1;
-    color: #003f0c;
+    color: #282D33 !important;
   }
   
+section.int {
+  height: 90vh;
+}
