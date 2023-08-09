@@ -247,7 +247,6 @@
 
 .fixed-icons a {
     color: #000;  /* color of the icons */
-    margin-left: 0.5rem;  /* space between the icons */
     font-size: 1.5rem;  /* size of the icons */
     text-decoration: none; /* remove default link style */
 }
@@ -274,4 +273,9 @@ a.email {
   font-size: .75rem;
   margin-top: -15%;
   display: flex;
+}
+
+section.int {
+  height: 80vh;
+  position: static;
 }

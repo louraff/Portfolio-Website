@@ -9,5 +9,7 @@
 }
 
 .read {
-    margin-top: 10%;
+    margin-top: auto;
+    height: auto;
+    max-width: 100%;
 }
