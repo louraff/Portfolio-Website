@@ -21,7 +21,7 @@ nav {
     display: block;
     margin: 5px 0;
     text-decoration: none;
-    font-size: 1.6vmin;
+    font-size: 1rem;
     font-weight: 400;
     opacity: 0.5;
     transition: opacity 0.5s;
@@ -33,6 +33,7 @@ nav {
     font-weight: 700;
     opacity: 1;
     color: #282D33 !important;
+    font-size: 1.5rem;
   }
   
 section.int {

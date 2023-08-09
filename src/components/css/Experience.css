@@ -6,7 +6,7 @@
   width: 100%;
   margin-top: 15%;
     margin: auto;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 ol {
@@ -56,11 +56,11 @@ ol {
   justify-content: start;
   align-items: start;
   font-weight: 400;
-  font-size: .75rem;
+  font-size: 1rem;
 }
 
 .time {
-  font-size: .75rem;
+  font-size: 1rem;
   font-weight: 300;
   flex: 1;
   display: flex;
@@ -70,7 +70,7 @@ ol {
 }
 
 .position {
-  font-size: .75rem;
+  font-size: 1rem;
   font-weight: 300;
   text-align: start;
   align-self: flex-start;}
@@ -81,6 +81,6 @@ a.ex {
     font-weight: 700;
     color: inherit;
     cursor: pointer;
-    font-size: .75rem;
+    font-size: 1rem;
 
 }
