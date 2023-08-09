@@ -1,5 +1,5 @@
 a.contact {
     font-size: 1.5rem;
     text-decoration: none;
-    color: #434b56 !important;
+    color: var(--main-text-color) !important;
 }

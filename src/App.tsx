@@ -19,13 +19,21 @@ import Skills from './components/Skills/Skills';
 import About from './components/About/About';
 
 const App: React.FC = () => {
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
   const containerRef = useRef<HTMLElement | null>(null);
-  const [bannerOpen, setBannerOpen] = useState(false); 
- 
-    // Function to toggle the banner
-  const toggleBanner = () => {
-    setBannerOpen(!bannerOpen);
-  };
+
+  const toggleTheme = () => {
+    let newTheme = theme === 'light' ? 'dark' : 'light';
+    localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
+};
+
+// Set the data-theme attribute on the document element
+useEffect(() => {
+  document.documentElement.setAttribute('data-theme', theme);
+}, [theme]);
+
 
     useEffect(() => {
         if (containerRef.current) {
@@ -46,15 +54,7 @@ const App: React.FC = () => {
 
     return (
       <div className="App">
-        {/* <div className="left-section">
-          <div id="hero">
-            <Hero />
-            
-          </div>
-          <div id="contact" className='social-links'>
-            <Contact />
-          </div>
-        </div> */}
+<button onClick={toggleTheme}>Toggle Theme</button>
         <NavBar />
         <div className="right-section">
             <section data-scroll-section>

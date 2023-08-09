@@ -7,6 +7,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background-color);
   }
   
   code {
@@ -14,3 +15,26 @@ body {
       monospace;
   }
   
+  /* Light Mode (default) */
+:root {
+  --background-color: white;
+  --main-text-color: #282D33;
+  --link-color: #9ABE4F;
+  --link-hover-color: #61dafb;
+  --skills-banner-background: #333;
+  --arrow-color: #333;
+  --header-text-color: white;
+  --fixed-icons-color: #000;
+  --fixed-icons-hover-color: #0077b5;
+  --github-hover-color: #171515;
+  --abt: #737373;
+  --email-color: #282D33;
+  --image-src: url("/assets/hero/read.png");
+}
+
+/* Dark Mode */
+[data-theme='dark'] {
+  --background-color: #282D33;
+  --main-text-color: #F2F2F2;
+  --image-src: url("/assets/hero/read-dark.png"); /* A darker or differently styled image for dark mode */
+}

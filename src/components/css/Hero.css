@@ -50,5 +50,5 @@ p.abt {
     margin-top: 0;
     margin-bottom: 1rem;
     margin-right: 25%;
-    color: #737373;
+    color: var(--abt);
 }
