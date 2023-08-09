@@ -269,10 +269,12 @@ a.email {
 
 .attribution {
   color: #282D33;
-  font-weight: 400;
   font-size: .75rem;
-  margin-top: -15%;
-  display: flex;
+  font-weight: 400;
+  position: static;
+  width: 100%;
+  margin-left: -20vmin;
+  margin-bottom: 1vmin;
 }
 
 section.int {
