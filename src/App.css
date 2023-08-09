@@ -281,3 +281,9 @@ section.int {
   height: 80vh;
   position: static;
 }
+
+.email {
+  color: #282D33;
+  font-size: 0.75rem;
+  font-weight: 200;
+}

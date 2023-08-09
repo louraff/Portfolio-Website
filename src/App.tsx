@@ -109,7 +109,7 @@ const App: React.FC = () => {
         <div className="fixed-icons">
     <a href="https://www.linkedin.com/in/louiseraffray/" target="_blank" rel="noreferrer" className='icons'><i className="fab fa-linkedin"></i></a>
     <a href="https://github.com/louraff" target="_blank" rel="noreferrer" className='icons'><i className="fab fa-github"></i></a>
-    <a href='mailto:raffraylouise@gmail.com'>Email me: raffraylouise@gmail.com</a>
+    <a href='mailto:raffraylouise@gmail.com' className='email'>Email me: raffraylouise@gmail.com</a>
 </div>
 <div className="attribution">
     Designed and developed by Louise Raffray using React & Typescript, 2023.
